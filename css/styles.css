@@ -1,0 +1,54 @@
+:root {
+    --colour-brand: #FF9F0E;
+    --colour-brand-light: #FCB62A;
+    --colour-black: #181817;
+}
+
+/* Base */
+ul {
+    list-style-type: none;
+}
+
+/* Button */
+.button-contact {
+    color: #FFFFFF;
+    background-color: var(--colour-brand);
+    border: 2px solid var(--colour-brand);
+    border-radius: 8px;    
+}
+
+.button-contact:hover {
+    background-color: var(--colour-brand-light);
+}
+
+.button-explore {
+    color: #FFFFFF;
+    background-color: var(--colour-brand);
+    border: 2px solid var(--colour-brand);
+    border-radius: 8px;
+}
+
+.button-explore:hover {
+    background-color: var(--colour-brand-light);
+}
+
+/* Link */
+.link {
+    color: var(--colour-black);
+}
+
+.link:hover {
+    color: var(--colour-brand);
+}
+
+.hero-title {
+    color: var(--colour-black);
+}
+
+.hero-title .accent {
+    color: var(--colour-brand);
+}
+
+.section-title {
+    color: var(--colour-black);
+}

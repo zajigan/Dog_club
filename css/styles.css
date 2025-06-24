@@ -1,10 +1,17 @@
 :root {
     --colour-brand: #FF9F0E;
     --colour-brand-light: #FCB62A;
-    --colour-black: #181817;
+    --colour-text: #181817;
 }
 
 /* Base */
+body {
+    color: var(--colour-text);
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
 ul {
     list-style-type: none;
 }
@@ -14,7 +21,9 @@ ul {
     color: #FFFFFF;
     background-color: var(--colour-brand);
     border: 2px solid var(--colour-brand);
-    border-radius: 8px;    
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .button-contact:hover {
@@ -26,23 +35,35 @@ ul {
     background-color: var(--colour-brand);
     border: 2px solid var(--colour-brand);
     border-radius: 8px;
+    font-size: 18px;
 }
 
 .button-explore:hover {
     background-color: var(--colour-brand-light);
 }
 
+footer .button-contact {
+    font-size: 16px;
+}
+
 /* Link */
 .link {
-    color: var(--colour-black);
+    color: var(--colour-text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .link:hover {
     color: var(--colour-brand);
+    font-weight: 700;
 }
 
 .hero-title {
-    color: var(--colour-black);
+    color: var(--colour-text);
+    font-family: Rowdies, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
 }
 
 .hero-title .accent {
@@ -50,5 +71,8 @@ ul {
 }
 
 .section-title {
-    color: var(--colour-black);
+    color: var(--colour-text);
+    font-family: Rowdies, sans-serif;
+    font-size: 56px;
+    font-weight: 400;
 }

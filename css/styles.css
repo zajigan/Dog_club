@@ -10,6 +10,7 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 22px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 ul {
@@ -75,4 +76,9 @@ footer .button-contact {
     font-family: Rowdies, sans-serif;
     font-size: 56px;
     font-weight: 400;
+}
+
+.privacy-policy-agreement {
+    font-size: 12px;
+    font-weight: 300;
 }

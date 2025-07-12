@@ -25,6 +25,7 @@ ul {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .button-contact:hover {
@@ -37,6 +38,7 @@ ul {
     border: 2px solid var(--colour-brand);
     border-radius: 8px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .button-explore:hover {
@@ -45,6 +47,7 @@ ul {
 
 footer .button-contact {
     font-size: 16px;
+    font-weight: 700;
 }
 
 /* Link */
@@ -69,6 +72,10 @@ footer .button-contact {
 
 .hero-title .accent {
     color: var(--colour-brand);
+}
+
+.hero-title .accent-capitalize {
+    text-transform: capitalize
 }
 
 .section-title {

@@ -116,9 +116,21 @@
       </section>
       <section id="contact-section">
         <h2 class="section-title">Our experts will take care of your friend</h2>
-        <p>Fill out the form so we can contact you!</p>
+        <p class="fill-out-the-form">
+          Fill out the form so we can contact you!
+        </p>
         <button class="button-contact" type="submit">Contact us</button>
-        <p class="privacy-policy-agreement">I agree to privacy policy</p>
+        <div>
+          <input
+            type="checkbox"
+            name="I agree to privacy policy"
+            id="i-agree-privacy-policy"
+            value="i-agree"
+          />
+          <label for="i-agree-privacy-policy" class="privacy-policy-agreement">
+            I agree to privacy policy
+          </label>
+        </div>
       </section>
     </main>
     <footer>
@@ -141,8 +153,31 @@
           <li><a class="link" href="#contact-section">Contact</a></li>
         </ul>
       </nav>
+      <ul>
+        <li><input type="email" placeholder="your email" /></li>
+        <li>
+          <input
+            type="text"
+            placeholder="your name"
+            id="name"
+            name="name"
+            required
+            maxlength="30"
+          />
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="I agree to privacy policy"
+            id="i-agree-privacy-policy"
+            value="i-agree"
+          />
+          <label for="i-agree-privacy-policy" class="privacy-policy-agreement">
+            I agree to privacy policy
+          </label>
+        </li>
+      </ul>
       <button class="button-contact" type="submit">Contact us</button>
-      <p class="privacy-policy-agreement">I agree to privacy policy</p>
       <address>
         <ul>
           <li>

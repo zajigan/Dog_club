@@ -2,12 +2,13 @@
     --colour-brand: #FF9F0E;
     --colour-brand-light: #FCB62A;
     --colour-text: #181817;
+    --colour-secondary-grey: #839aa9;
 }
 
 /* Base */
 body {
     color: var(--colour-text);
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
@@ -24,8 +25,12 @@ ul {
     border: 2px solid var(--colour-brand);
     border-radius: 8px;
     cursor: pointer;
+    font-family: inherit;
     font-size: 18px;
     font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    padding: 16px 32px 16px 32px;
 }
 
 .button-contact:hover {
@@ -37,6 +42,8 @@ ul {
     background-color: var(--colour-brand);
     border: 2px solid var(--colour-brand);
     border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
     font-size: 18px;
     font-weight: 500;
 }
@@ -48,6 +55,7 @@ ul {
 footer .button-contact {
     font-size: 16px;
     font-weight: 700;
+    padding: 8px 24px 8px 24px;
 }
 
 /* Link */
@@ -56,6 +64,9 @@ footer .button-contact {
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .05em;
+    text-align: left;
 }
 
 .link:hover {
@@ -88,4 +99,11 @@ footer .button-contact {
 .privacy-policy-agreement {
     font-size: 12px;
     font-weight: 300;
+    line-height: 14px;
+}
+
+.fill-out-the-form {
+    color: var(--colour-secondary-grey);
+    font-size: 18px;
+    font-weight: 400;
 }

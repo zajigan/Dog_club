@@ -67,6 +67,7 @@ body {
     font-weight: 400;
     line-height: 1.545;
     text-align: left;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -144,6 +145,22 @@ footer .button-contact {
     font-weight: 700;
 }
 
+/* header */
+.header-section {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 32px 0 0 0;
+}
+
+/* hero-section */
+.hero-section {
+    width: 100%;
+    max-width: 1563px;
+    margin: -5px 0 0 0;
+    padding: 217px 705px 228px 223px;
+}
+
 .hero-title {
     color: var(--colour-black);
     font-family: Rowdies, sans-serif;
@@ -152,6 +169,7 @@ footer .button-contact {
     line-height: 1.236;
     letter-spacing: .05em;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 .hero-title .accent {
@@ -171,10 +189,43 @@ footer .button-contact {
     text-align: left;
 }
 
-/* Happy customer */
-.customer-title {
+/* Less talk section */
+.less-talk-section {
+    width: 100%;
+    max-width: 1399px;
+    padding: 155px 0 155px 759px;
+}
+
+.less-talk-title {
+    margin-bottom: 40px;
+}
+
+/* Services category section */
+.services-category-section {
+    width: 100%;
+    max-width: 1228px;
+    padding: 32px 0 48px 0;
+}
+
+.services-category-title {
+    margin-bottom: 48px;
+}
+
+/* Happy customer section*/
+.happy-customer-section {
+    width: 100%;
+    max-width: 1220px;
+    padding: 48px 0 84px 0;
+}
+
+.happy-customer-title {
+    margin-bottom: 48px;
+}
+
+.customer-article {
     background-color: #68686b;
     color: var(--colour-white);
+    margin-bottom: 8px;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.167;
@@ -198,7 +249,24 @@ footer .button-contact {
     text-align: left;
 }
 
+/* Contact section */
+.contact-section {
+    width: 100%;
+    max-width: 2009px;
+    padding: 84px 0 92px 0;
+}
+
+.contact-title {
+    margin-bottom: 16px;
+}
+
 /* Footer */
+.footer-section {
+    width: 100%;
+    max-width: 1440px;
+    padding: 32px 395px 81px 100px;
+}
+
 .privacy-policy-agreement {
     font-size: 12px;
     font-weight: 300;

@@ -95,8 +95,6 @@ address {
     line-height: 1.167;
     text-align: left;
     padding: 16px 32px;
-    display: block;
-    margin: 0 auto;
 }
 
 .button-contact:hover {
@@ -126,7 +124,7 @@ footer .button-contact {
     font-weight: 700;
     line-height: 1.1875;
     text-align: center;
-    padding: 8px 24px 8px 24px;
+    padding: 8px 24px;
 }
 
 /* Link */
@@ -145,20 +143,27 @@ footer .button-contact {
     font-weight: 700;
 }
 
+.container {
+    /* display: flex; */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1272px;
+    padding: 0 16px;
+}
+
 /* header */
 .header-section {
-    width: 100%;
-    max-width: 1224px;
-    margin: 0 auto;
-    padding: 32px 0 0 0;
+    padding: 32px 0 106px 0;
 }
 
 /* hero-section */
-.hero-section {
+/* .hero-container {
     width: 100%;
-    max-width: 1563px;
-    margin: -5px 0 0 0;
-    padding: 217px 705px 228px 223px;
+    max-width: 635px;
+} */
+
+.hero-section {
+    padding: 106px 0 195px 0;
 }
 
 .hero-title {
@@ -190,10 +195,13 @@ footer .button-contact {
 }
 
 /* Less talk section */
-.less-talk-section {
+/* .less-talk-container {
     width: 100%;
-    max-width: 1399px;
-    padding: 155px 0 155px 759px;
+    max-width: 640px;
+} */
+
+.less-talk-section {
+    padding: 196px 0 100px 0;
 }
 
 .less-talk-title {
@@ -201,10 +209,13 @@ footer .button-contact {
 }
 
 /* Services category section */
-.services-category-section {
+/* .services-category-container {
     width: 100%;
     max-width: 1228px;
-    padding: 32px 0 48px 0;
+} */
+
+.services-category-section {
+    padding: 87px 0 48px 0;
 }
 
 .services-category-title {
@@ -212,9 +223,12 @@ footer .button-contact {
 }
 
 /* Happy customer section*/
-.happy-customer-section {
+/* .happy-customer-container {
     width: 100%;
     max-width: 1220px;
+} */
+
+.happy-customer-section {
     padding: 48px 0 84px 0;
 }
 
@@ -250,10 +264,13 @@ footer .button-contact {
 }
 
 /* Contact section */
-.contact-section {
+/* .contact-container {
     width: 100%;
-    max-width: 2009px;
-    padding: 84px 0 92px 0;
+    max-width: 600px;
+} */
+
+.contact-section {
+    padding: 84px 0 71px 0;
 }
 
 .contact-title {
@@ -261,10 +278,13 @@ footer .button-contact {
 }
 
 /* Footer */
-.footer-section {
+/* .footer-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 32px 395px 81px 100px;
+    max-width: 945px;
+} */
+
+.footer-section {
+    padding: 71px 0 81px 0;
 }
 
 .privacy-policy-agreement {

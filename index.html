@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="header-section">
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="header-nav">
           <a href="./index.html">
             <img src="./images/logo-dog-club.svg" alt="Logo Dog club" />
           </a>
-          <ul>
+          <ul class="header-menu">
             <li>
               <a class="link" href="#less-talk-section">Less talk</a>
             </li>
@@ -26,24 +26,34 @@
             <li>
               <a class="link" href="#happy-customer-section">Happy customer </a>
             </li>
-            <li><a class="link" href="#contact-section">Contact</a></li>
+            <li>
+              <a class="link" href="#contact-section">Contact</a>
+            </li>
           </ul>
         </nav>
+        <a href="#">
+          <img src="./images/basket-minus-outline.svg" alt="Basket image" />
+        </a>
         <button class="button-contact" type="button">Contact us</button>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">Taking care</span> for your
-            <span class="accent-capitalize">smart </span
-            ><span class="accent-capitalize">dog</span>!
-          </h1>
-          <p>
-            Human-canine bonding is the relationship between dogs and humans
-          </p>
-          <button class="button-explore" type="button">Explore more</button>
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="accent">Taking care</span> for your
+                <span class="accent-capitalize">smart </span
+                ><span class="accent-capitalize">dog</span>!
+              </h1>
+              <p>
+                Human-canine bonding is the relationship between dogs and humans
+              </p>
+              <button class="button-explore" type="button">Explore more</button>
+            </div>
+            <img src="./images/hero-dog.jpg" alt="Black dog" />
+          </div>
         </div>
       </section>
       <section class="less-talk-section" id="less-talk-section">
@@ -95,9 +105,9 @@
       <section class="happy-customer-section" id="happy-customer-section">
         <div class="container">
           <h2 class="happy-customer-title section-title">Happy customer</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="article-list">
+            <li class="article-item">
+              <article class="article-card">
                 <h3 class="customer-article">Christin &amp; Tom</h3>
                 <p class="customer-text">
                   Love the overall workout experience!
@@ -105,8 +115,8 @@
                 <p class="customer-grade">5/5</p>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="article-item">
+              <article class="article-card">
                 <h3 class="customer-article">Anna & Tobby</h3>
                 <p class="customer-text">
                   Amazing Products &amp; Delivery on time.
@@ -114,8 +124,8 @@
                 <p class="customer-grade">4/5</p>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="article-item">
+              <article class="article-card">
                 <h3 class="customer-article">Sindy &amp; Kitch</h3>
                 <p class="customer-text">Great job with the trainer!</p>
                 <p class="customer-grade">5/5</p>

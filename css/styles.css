@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -93,7 +95,7 @@ address {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.167;
-    text-align: left;
+    text-align: center;
     padding: 16px 32px;
 }
 
@@ -111,7 +113,7 @@ address {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.167;
-    text-align: left;
+    text-align: center;
     padding: 16px 32px;
 }
 
@@ -140,20 +142,51 @@ footer .button-contact {
 
 .link:hover {
     color: var(--colour-brand);
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .container {
-    /* display: flex; */
     margin: 0 auto;
     width: 100%;
-    max-width: 1272px;
+    max-width: 1256px;
     padding: 0 16px;
 }
 
 /* header */
+.header-nav > a {
+    line-height: normal;
+    font-size: 1px;
+}
+
 .header-section {
     padding: 32px 0 106px 0;
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-container > a {
+    display: flex;
+    line-height: normal;
+    font-size: 1px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 24px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 48px;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 /* hero-section */
@@ -183,6 +216,25 @@ footer .button-contact {
 
 .hero-title .accent-capitalize {
     text-transform: capitalize
+}
+
+.hero-container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding-right: 18px;
+}
+
+.hero-content {
+    max-width: 635px;
+}
+
+.hero-content > p {
+    max-width: 494px;
+}
+
+.hero-container > img {
+    padding-top: 23px;
 }
 
 .section-title {
@@ -236,9 +288,25 @@ footer .button-contact {
     margin-bottom: 48px;
 }
 
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.article-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
+
+.article-card {
+    border-radius: 24px;
+    border: 1px solid #68686b;
+    padding: 16px 0;
+    width: 344px;
+}
+
 .customer-article {
-    background-color: #68686b;
-    color: var(--colour-white);
+    color: #1d0af2; /* change on var(--colour-white) */
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 600;
@@ -247,7 +315,6 @@ footer .button-contact {
 }
 
 .customer-text {
-    background-color: #68686b;
     color: var(--colour-s3);
     font-size: 16px;
     font-weight: 400;

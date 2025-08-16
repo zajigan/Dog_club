@@ -68,6 +68,8 @@ body {
     line-height: 1.545;
     text-align: left;
     margin: 0;
+    background-image: url('../images/background.svg');
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -197,6 +199,8 @@ footer .button-contact {
 
 .hero-section {
     padding: 106px 0 195px 0;
+    background-image: url('../images/hero-section-background.svg');
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -235,6 +239,7 @@ footer .button-contact {
 
 .hero-container > img {
     padding-top: 23px;
+    background-image: url('../images/hero-section-background-elements.svg');
 }
 
 .section-title {
@@ -258,6 +263,14 @@ footer .button-contact {
 
 .less-talk-title {
     margin-bottom: 40px;
+}
+
+.less-talk-video {
+    padding-left: 200px; /* Should be corrected */
+}
+
+.less-talk-video::hover {
+    cursor: pointer;
 }
 
 /* Services category section */
@@ -303,6 +316,7 @@ footer .button-contact {
     border: 1px solid #68686b;
     padding: 16px 0;
     width: 344px;
+    height: 456px;
 }
 
 .customer-article {

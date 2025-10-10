@@ -284,7 +284,15 @@ footer .button-contact {
 }
 
 .services-category-title {
+    display: flex;
+    justify-content: center;
     margin-bottom: 48px;
+    padding: 0px;
+}
+
+.service-category-item {
+    display: flex;
+
 }
 
 /* Happy customer section*/

@@ -99,6 +99,9 @@ address {
     line-height: 1.167;
     text-align: center;
     padding: 16px 32px;
+    transition-duration: .2s;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: ease-in-out;
 }
 
 .button-contact:hover {
@@ -117,6 +120,9 @@ address {
     line-height: 1.167;
     text-align: center;
     padding: 16px 32px;
+    transition-duration: .2s;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: ease-in-out;
 }
 
 .button-explore:hover {
@@ -129,6 +135,9 @@ footer .button-contact {
     line-height: 1.1875;
     text-align: center;
     padding: 8px 24px;
+    transition-duration: .2s;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: ease-in-out;
 }
 
 /* Link */
@@ -290,9 +299,54 @@ footer .button-contact {
     padding: 0px;
 }
 
-.service-category-item {
+.service-category-list {
     display: flex;
+    gap: 24px;
+}
 
+.service-article-card {
+    border-radius: 16px;
+    border: 1px solid var(--colour-s5);
+    padding: 47px 71px;
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+    background: linear-gradient(var(--colour-white), ​#fffbf4);
+    transition-duration: .2s;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out;
+}
+
+.service-article-card:hover {
+    box-shadow: 0px 4px 4px 0px rgba(24, 24, 23, 0.05);
+}
+
+.service-text {
+    color: var(--colour-brand);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.1818;
+    text-align: center;
+    margin: 0 0;
+    padding-top: 24px;
+}
+
+.service-article-link {
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+.service-link {
+    color: var(--colour-brand);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+.service-arrow {
+    font-size: 1px;
+    line-height: 1;
 }
 
 /* Happy customer section*/
@@ -306,6 +360,8 @@ footer .button-contact {
 }
 
 .happy-customer-title {
+    display: flex;
+    justify-content: center;
     margin-bottom: 48px;
 }
 
@@ -353,18 +409,42 @@ footer .button-contact {
 }
 
 /* Contact section */
-/* .contact-container {
-    width: 100%;
-    max-width: 600px;
-} */
-
 .contact-section {
     padding: 84px 0 71px 0;
 }
 
 .contact-title {
+    display: flex;
+    justify-content: center;
     margin-bottom: 16px;
+    text-align: center;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.fill-out-the-form {
+    color: var(--colour-secondary-grey);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: .05em;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+/* .contact-list {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .contact-item {
+    flex-basis: 600px;
+} */
 
 /* Footer */
 /* .footer-container {
@@ -380,15 +460,6 @@ footer .button-contact {
     font-size: 12px;
     font-weight: 300;
     line-height: 1.167;
-    text-align: center;
-}
-
-.fill-out-the-form {
-    color: var(--colour-secondary-grey);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.333;
-    letter-spacing: .05em;
     text-align: center;
 }
 

@@ -70,10 +70,7 @@
             </p>
             <button class="button-explore" type="button">Explore more</button>
           </div>
-          <img
-            src="./images/shetland-sheepdog-lying-front-white-wall.jpg"
-            alt="Lying shetland dog"
-          />
+          <img src="./images/dog-lying.png" alt="Lying shetland dog" />
           <a href="#" class="less-talk-video">
             <img src="./images/video.svg" alt="Learn more" />
           </a>
@@ -84,36 +81,44 @@
           <h2 class="services-category-title section-title">
             Services category
           </h2>
-          <ul class="service-category-item">
+          <ul class="service-category-list">
             <li>
-              <a href="#">
-                <img src="./images/frame-grooming.svg" alt="Grooming" />
-              </a>
-            </li>
-            <li>
-              <a href="./nutrition.html">
-                <img src="./images/frame-nutrition.svg" alt="Nutrition" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/frame-training.svg" alt="Training" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/frame-bathing.svg" alt="Bathing" />
-              </a>
-            </li>
-            <li>
-              <h4>
+              <article class="service-article-card">
                 <a href="#">
-                  more services<img
-                    src="./images/arrow.svg"
-                    alt="more services"
-                  />
+                  <img src="./images/frame-grooming.svg" alt="Grooming" />
                 </a>
-              </h4>
+                <p class="service-text">Grooming</p>
+              </article>
+            </li>
+            <li>
+              <article class="service-article-card">
+                <a href="#">
+                  <img src="./images/frame-nutrition.svg" alt="Nutrition" />
+                </a>
+                <p class="service-text">Nutrition</p>
+              </article>
+            </li>
+            <li>
+              <article class="service-article-card">
+                <a href="#">
+                  <img src="./images/frame-training.svg" alt="Training" />
+                </a>
+                <p class="service-text">Training</p>
+              </article>
+            </li>
+            <li>
+              <article class="service-article-card">
+                <a href="#">
+                  <img src="./images/frame-bathing.svg" alt="Bathing" />
+                </a>
+                <p class="service-text">Bathing</p>
+              </article>
+            </li>
+            <li class="service-article-link">
+              <a href="#" class="service-link"> more services </a>
+              <a href="#" class="service-arrow">
+                <img src="./images/arrow.svg" alt="more services" />
+              </a>
             </li>
           </ul>
         </div>
@@ -153,25 +158,33 @@
       <section class="contact-section" id="contact-section">
         <div class="container">
           <h2 class="contact-title section-title">
-            Our experts will take care of your friend
+            Our experts will take<br />care of your friend
           </h2>
-          <p class="fill-out-the-form">
-            Fill out the form so we can contact you!
-          </p>
-          <button class="button-contact" type="submit">Contact us</button>
-          <div>
-            <input
-              type="checkbox"
-              name="I agree to privacy policy"
-              id="i-agree-privacy-policy"
-              value="i-agree"
-            />
-            <label
-              for="i-agree-privacy-policy"
-              class="privacy-policy-agreement"
-            >
-              I agree to privacy policy
-            </label>
+          <div class="contact-container">
+            <p class="fill-out-the-form">
+              Fill out the form so we can contact you!
+            </p>
+            <ul class="contact-list">
+              <li class="contact-item">Your name</li>
+              <li class="contact-item">Pet name</li>
+              <li class="contact-item">Your phone</li>
+              <li class="contact-item">Your email</li>
+            </ul>
+            <button class="button-contact" type="submit">Contact us</button>
+            <div>
+              <input
+                type="checkbox"
+                name="I agree to privacy policy"
+                id="i-agree-privacy-policy"
+                value="i-agree"
+              />
+              <label
+                for="i-agree-privacy-policy"
+                class="privacy-policy-agreement"
+              >
+                I agree to privacy policy
+              </label>
+            </div>
           </div>
         </div>
       </section>

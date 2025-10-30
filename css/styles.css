@@ -70,6 +70,7 @@ body {
     margin: 0;
     background-image: url('../images/background.svg');
     background-repeat: no-repeat;
+    background-position: center 43px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -106,6 +107,7 @@ address {
 
 .button-contact:hover {
     background-color: var(--colour-brand-light);
+    border: 2px solid var(--colour-brand-light);
 }
 
 .button-explore {
@@ -127,6 +129,7 @@ address {
 
 .button-explore:hover {
     background-color: var(--colour-brand-light);
+    border: 2px solid var(--colour-brand-light);
 }
 
 footer .button-contact {
@@ -170,7 +173,7 @@ footer .button-contact {
 }
 
 .header-section {
-    padding: 32px 0 106px 0;
+    padding: 32px 0 0 0;
     display: flex;
 }
 
@@ -207,9 +210,10 @@ footer .button-contact {
 } */
 
 .hero-section {
-    padding: 106px 0 195px 0;
+    padding: 212px 0 195px 0;
     background-image: url('../images/hero-section-background.svg');
     background-repeat: no-repeat;
+    background-position: center -5px;
 }
 
 .hero-title {
@@ -249,6 +253,8 @@ footer .button-contact {
 .hero-container > img {
     padding-top: 23px;
     background-image: url('../images/hero-section-background-elements.svg');
+    background-position: -248px 0;
+    background-size: cover;
 }
 
 .section-title {
@@ -274,9 +280,9 @@ footer .button-contact {
     margin-bottom: 40px;
 }
 
-.less-talk-video {
+/* .less-talk-video {
     padding-left: 200px; /* Should be corrected */
-}
+} */
 
 .less-talk-video::hover {
     cursor: pointer;
@@ -356,7 +362,7 @@ footer .button-contact {
 } */
 
 .happy-customer-section {
-    padding: 48px 0 84px 0;
+    padding: 48px 0 0 0;
 }
 
 .happy-customer-title {
@@ -410,7 +416,10 @@ footer .button-contact {
 
 /* Contact section */
 .contact-section {
-    padding: 84px 0 71px 0;
+    padding: 168px 0 71px 0;
+    background-image: url('..//images/contact-section-background.svg');
+    background-repeat: no-repeat;
+    background-position: center -66px;
 }
 
 .contact-title {
@@ -454,6 +463,8 @@ footer .button-contact {
 
 .footer-section {
     padding: 71px 0 81px 0;
+    background: #FFFAF3;
+    background-repeat: no-repeat;
 }
 
 .privacy-policy-agreement {

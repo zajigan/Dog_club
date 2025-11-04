@@ -162,8 +162,9 @@ footer .button-contact {
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1256px;
+    max-width: 1440px;
     padding: 0 16px;
+    border: 1px dashed green; /* DELETE */
 }
 
 /* header */
@@ -173,7 +174,7 @@ footer .button-contact {
 }
 
 .header-section {
-    padding: 32px 0 0 0;
+    padding: 32px 96px 0 108px;
     display: flex;
 }
 
@@ -203,6 +204,14 @@ footer .button-contact {
     justify-content: center;
 }
 
+.header-shopping-cart {
+    fill: var(--colour-brand);
+}
+
+.header-shopping-cart:hover {
+    fill: var(--colour-brand-light);
+}
+
 /* hero-section */
 /* .hero-container {
     width: 100%;
@@ -213,7 +222,8 @@ footer .button-contact {
     padding: 212px 0 195px 0;
     background-image: url('../images/hero-section-background.svg');
     background-repeat: no-repeat;
-    background-position: center -5px;
+    background-position: right -5px;
+    border: 3px solid blue; /* DELETE */
 }
 
 .hero-title {
@@ -281,7 +291,7 @@ footer .button-contact {
 }
 
 /* .less-talk-video {
-    padding-left: 200px; /* Should be corrected */
+    padding-left: 200px; /* Should be corrected
 } */
 
 .less-talk-video::hover {
@@ -351,8 +361,7 @@ footer .button-contact {
 }
 
 .service-arrow {
-    font-size: 1px;
-    line-height: 1;
+    fill: var(--colour-brand);
 }
 
 /* Happy customer section*/
@@ -390,7 +399,7 @@ footer .button-contact {
 }
 
 .customer-article {
-    color: #1d0af2; /* change on var(--colour-white) */
+    color: var(--colour-white);
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 600;
@@ -407,11 +416,51 @@ footer .button-contact {
 }
 
 .customer-grade {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.customer-bones-grade {
+    display: flex;
+    gap: 8px;
+    fill: var(--colour-s7);
+}
+
+.customer-bones-nograde {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    fill: var(--colour-s3);
+}
+
+.customer-number-grade {
     color: var(--colour-s7);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.1875;
     text-align: left;
+    margin: 0 0;
+}
+
+.happy-customer-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--colour-white);
+    background-color: var(--colour-secondary-grey);
+    border-radius: 50%;
+    border: 1px solid var(--colour-secondary-grey);
+    cursor: pointer;
+}
+
+.happy-customer-arrow:hover {
+    fill: var(--colour-white);
+    background-color: var(--colour-brand);
+    border: 1px solid var(--colour-brand);
 }
 
 /* Contact section */
@@ -455,6 +504,10 @@ footer .button-contact {
     flex-basis: 600px;
 } */
 
+.contact-icon {
+    fill: var(--colour-brand);
+}
+
 /* Footer */
 /* .footer-container {
     width: 100%;
@@ -483,4 +536,28 @@ footer .button-contact {
 .address:hover {
     color: #0000ee;
     font-weight: 600;
+}
+
+.address-icon-instagram {
+    fill: transparent;
+    stroke: var(--colour-brand);
+    transition-property: color, background-color, border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.address-icon-instagram:hover {
+    fill: transparent;
+    stroke: var(--colour-brand-light);
+}
+
+.address-icon-facebook {
+    transition-property: color, background-color, border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    fill: var(--colour-brand);
+}
+
+.address-icon-facebook:hover {
+    fill: var(--colour-brand-light);
 }

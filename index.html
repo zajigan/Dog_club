@@ -32,7 +32,9 @@
           </ul>
         </nav>
         <a href="#">
-          <img src="./images/basket-minus-outline.svg" alt="Basket image" />
+          <svg class="header-shopping-cart" width="40" height="40">
+            <use href="./images/icons.svg#icon-shopping-cart"></use>
+          </svg>
         </a>
         <button class="button-contact" type="button">Contact us</button>
       </div>
@@ -115,9 +117,11 @@
               </article>
             </li>
             <li class="service-article-link">
-              <a href="#" class="service-link"> more services </a>
-              <a href="#" class="service-arrow">
-                <img src="./images/arrow.svg" alt="more services" />
+              <a href="#" class="service-link">
+                more services
+                <svg class="service-arrow" width="40" height="24">
+                  <use href="./images/icons.svg#icon-service-arrow"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -126,6 +130,11 @@
       <section class="happy-customer-section" id="happy-customer-section">
         <div class="container">
           <h2 class="happy-customer-title section-title">Happy customer</h2>
+          <button class="happy-customer-arrow" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-happy-customer-arrow"></use>
+            </svg>
+          </button>
           <ul class="article-list">
             <li class="article-item">
               <article class="article-card">
@@ -137,7 +146,36 @@
                 <p class="customer-text">
                   Love the overall workout experience!
                 </p>
-                <p class="customer-grade">5/5</p>
+                <div class="customer-grade">
+                  <div class="customer-bones-grade">
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="customer-number-grade">5/5</p>
+                </div>
               </article>
             </li>
             <li class="article-item">
@@ -146,17 +184,80 @@
                 <p class="customer-text">
                   Amazing Products &amp; Delivery on time.
                 </p>
-                <p class="customer-grade">4/5</p>
+                <div class="customer-grade">
+                  <div class="customer-bones-grade">
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div class="customer-bones-nograde">
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="customer-number-grade">4/5</p>
+                </div>
               </article>
             </li>
             <li class="article-item">
               <article class="article-card">
                 <h3 class="customer-article">Sindy &amp; Kitch</h3>
                 <p class="customer-text">Great job with the trainer!</p>
-                <p class="customer-grade">5/5</p>
+                <div class="customer-grade">
+                  <div class="customer-bones-grade">
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="32" height="14">
+                        <use href="./images/icons.svg#icon-bones-grade"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="customer-number-grade">5/5</p>
+                </div>
               </article>
             </li>
           </ul>
+          <button class="happy-customer-arrow" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-happy-customer-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="contact-section" id="contact-section">
@@ -169,10 +270,30 @@
               Fill out the form so we can contact you!
             </p>
             <ul class="contact-list">
-              <li class="contact-item">Your name</li>
-              <li class="contact-item">Pet name</li>
-              <li class="contact-item">Your phone</li>
-              <li class="contact-item">Your email</li>
+              <li class="contact-item">
+                <svg class="contact-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-form-man"></use>
+                </svg>
+                Your name
+              </li>
+              <li class="contact-item">
+                <svg class="contact-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-form-dog"></use>
+                </svg>
+                Pet name
+              </li>
+              <li class="contact-item">
+                <svg class="contact-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-form-phone"></use>
+                </svg>
+                Your phone
+              </li>
+              <li class="contact-item">
+                <svg class="contact-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-form-email"></use>
+                </svg>
+                Your email
+              </li>
             </ul>
             <button class="button-contact" type="submit">Contact us</button>
             <div>
@@ -215,7 +336,12 @@
           </ul>
         </nav>
         <ul>
-          <li><input type="email" placeholder="your email" /></li>
+          <li>
+            <svg class="contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-form-email"></use>
+            </svg>
+            <input type="email" placeholder="your email" />
+          </li>
           <li>
             <input
               type="text"
@@ -226,42 +352,42 @@
               maxlength="30"
             />
           </li>
-          <li>
-            <input
-              type="checkbox"
-              name="I agree to privacy policy"
-              id="i-agree-privacy-policy"
-              value="i-agree"
-            />
-            <label
-              for="i-agree-privacy-policy"
-              class="privacy-policy-agreement"
-            >
-              I agree to privacy policy
-            </label>
-          </li>
         </ul>
         <button class="button-contact" type="submit">Contact us</button>
+        <input
+          type="checkbox"
+          name="I agree to privacy policy"
+          id="i-agree-privacy-policy"
+          value="i-agree"
+        />
+        <label for="i-agree-privacy-policy" class="privacy-policy-agreement">
+          I agree to privacy policy
+        </label>
+        <img src="./images/footer-section-dog.png" alt="Friendly dog" />
       </div>
       <address>
         <ul>
           <li>
-            <a href="#">
-              <img src="./images/logo-instagram.svg" alt="Logo Instagram" />
+            <a href="#" title="Instagram">
+              <svg class="address-icon-instagram" width="30" height="30">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./images/logo-facebook.svg" alt="Logo Facebook" />
+            <a href="#" title="Facebook">
+              <svg class="address-icon-facebook" width="32" height="32">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a href="tel:+380991234567" class="address">+38 099 123-45-67</a>
           </li>
           <li>
-            <a href="mailto:dogclub@gmail.com" class="address"
-              >dogclub@gmail.com</a
-            >
+            <a href="mailto:dogclub@gmail.com" class="address">
+              dogclub@gmail.com
+            </a>
           </li>
           <li>
             <a
@@ -281,7 +407,8 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            >
+            </iframe>
           </li>
         </ul>
         <a href="#" target="_blank" class="address" style="font-style: italic">

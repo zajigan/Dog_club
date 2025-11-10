@@ -8,40 +8,42 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-section">
-      <div class="container header-container">
+    <header class="container header-section">
+      <div class="header-container">
         <nav class="header-nav">
           <a href="./index.html">
             <img src="./images/logo-dog-club.svg" alt="Logo Dog club" />
           </a>
           <ul class="header-menu">
             <li>
-              <a class="link" href="#less-talk-section">Less talk</a>
+              <a class="link" href="#less-talk-section">Less talk </a>
             </li>
             <li>
-              <a class="link" href="#services-category-section">
-                Services category
-              </a>
+              <a class="link" href="#service-section"> Services category </a>
             </li>
             <li>
-              <a class="link" href="#happy-customer-section">Happy customer </a>
+              <a class="link" href="#customer-section">Happy customer </a>
             </li>
             <li>
               <a class="link" href="#contact-section">Contact</a>
             </li>
           </ul>
         </nav>
-        <a href="#">
-          <svg class="header-shopping-cart" width="40" height="40">
-            <use href="./images/icons.svg#icon-shopping-cart"></use>
-          </svg>
-        </a>
-        <button class="button-contact" type="button">Contact us</button>
+        <div class="header-buttons">
+          <a href="#">
+            <svg class="header-shopping-cart" width="40" height="40">
+              <use href="./images/icons.svg#icon-shopping-cart"></use>
+            </svg>
+          </a>
+          <button class="button-contact modal-btn-open" type="button">
+            Contact us
+          </button>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero-section">
-        <div class="container">
+      <section class="container hero-section">
+        <div class="hero-background-elements">
           <div class="hero-container">
             <div class="hero-content">
               <h1 class="hero-title">
@@ -58,13 +60,18 @@
           </div>
         </div>
       </section>
-      <section class="less-talk-section" id="less-talk-section">
-        <div>
-          <div class="container">
+      <section class="container less-talk-section" id="less-talk-section">
+        <div class="less-talk-container">
+          <img
+            class="less-talk-image"
+            src="./images/dog-lying.png"
+            alt="Lying shetland dog"
+          />
+          <div>
             <h2 class="less-talk-title section-title">
               Less talk and more walk
             </h2>
-            <p>
+            <p class="less-talk-content">
               Sometimes our career, lifestyle, or routines can make it difficult
               to provide your pet with the recommended amount of exercise that
               they need. Which is why, it’s okay to use an extra hand in walking
@@ -72,200 +79,209 @@
             </p>
             <button class="button-explore" type="button">Explore more</button>
           </div>
-          <!-- <img src="./images/dog-lying.png" alt="Lying shetland dog" /> -->
-          <a href="#" class="less-talk-video">
-            <img src="./images/dog-lying.png" alt="Learn more" />
-          </a>
         </div>
+        <!-- <a href="#" class="less-talk-video">
+          <img src="./images/less-talk-video.png" alt="Learn more" />
+        </a> -->
       </section>
-      <section class="services-category-section" id="services-category-section">
-        <div class="container">
-          <h2 class="services-category-title section-title">
-            Services category
-          </h2>
-          <ul class="service-category-list">
-            <li>
-              <article class="service-article-card">
-                <a href="#">
-                  <img src="./images/frame-grooming.svg" alt="Grooming" />
-                </a>
-                <p class="service-text">Grooming</p>
-              </article>
-            </li>
-            <li>
-              <article class="service-article-card">
-                <a href="#">
-                  <img src="./images/frame-nutrition.svg" alt="Nutrition" />
-                </a>
-                <p class="service-text">Nutrition</p>
-              </article>
-            </li>
-            <li>
-              <article class="service-article-card">
-                <a href="#">
-                  <img src="./images/frame-training.svg" alt="Training" />
-                </a>
-                <p class="service-text">Training</p>
-              </article>
-            </li>
-            <li>
-              <article class="service-article-card">
-                <a href="#">
-                  <img src="./images/frame-bathing.svg" alt="Bathing" />
-                </a>
-                <p class="service-text">Bathing</p>
-              </article>
-            </li>
-            <li class="service-article-link">
-              <a href="#" class="service-link">
-                more services
+      <section class="container service-section" id="service-section">
+        <h2 class="service-title section-title">Services category</h2>
+        <ul class="service-list">
+          <li>
+            <article class="service-article-card">
+              <a href="#">
+                <img src="./images/frame-grooming.svg" alt="Grooming" />
+              </a>
+              <p class="service-text">Grooming</p>
+            </article>
+          </li>
+          <li>
+            <article class="service-article-card">
+              <a href="#">
+                <img src="./images/frame-nutrition.svg" alt="Nutrition" />
+              </a>
+              <p class="service-text">Nutrition</p>
+            </article>
+          </li>
+          <li>
+            <article class="service-article-card">
+              <a href="#">
+                <img src="./images/frame-training.svg" alt="Training" />
+              </a>
+              <p class="service-text">Training</p>
+            </article>
+          </li>
+          <li>
+            <article class="service-article-card">
+              <a href="#">
+                <img src="./images/frame-bathing.svg" alt="Bathing" />
+              </a>
+              <p class="service-text">Bathing</p>
+            </article>
+          </li>
+          <li class="service-article-link">
+            <a class="service-article-link" href="#">
+              <div class="service-link">more services</div>
+              <div>
                 <svg class="service-arrow" width="40" height="24">
                   <use href="./images/icons.svg#icon-service-arrow"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
-      <section class="happy-customer-section" id="happy-customer-section">
-        <div class="container">
-          <h2 class="happy-customer-title section-title">Happy customer</h2>
-          <button class="happy-customer-arrow" type="button">
+      <section class="container customer-section" id="customer-section">
+        <h2 class="customer-title section-title">Happy customer</h2>
+        <div class="customer-container">
+          <button class="customer-arrow" type="button">
             <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-happy-customer-arrow"></use>
+              <use href="./images/icons.svg#icon-customer-arrow"></use>
             </svg>
           </button>
           <ul class="article-list">
             <li class="article-item">
               <article class="article-card">
                 <!-- <img
-                  src="/images/customer-christin-tom.jpg"
-                  alt="Christin & Tom"
-                /> -->
-                <h3 class="customer-article">Christin &amp; Tom</h3>
-                <p class="customer-text">
-                  Love the overall workout experience!
-                </p>
-                <div class="customer-grade">
-                  <div class="customer-bones-grade">
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
+                src="/images/customer-christin-tom.jpg"
+                alt="Christin & Tom"
+              /> -->
+                <div class="customer-background">
+                  <h3 class="customer-name">Christin &amp; Tom</h3>
+                  <p class="customer-text">
+                    Love the overall workout experience!
+                  </p>
+                  <div class="customer-grade">
+                    <div class="customer-bones-grade">
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
                     </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
+                    <p class="customer-number-grade">5/5</p>
                   </div>
-                  <p class="customer-number-grade">5/5</p>
                 </div>
               </article>
             </li>
             <li class="article-item">
               <article class="article-card">
-                <h3 class="customer-article">Anna & Tobby</h3>
-                <p class="customer-text">
-                  Amazing Products &amp; Delivery on time.
-                </p>
-                <div class="customer-grade">
-                  <div class="customer-bones-grade">
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
+                <!-- <img src="./images/customer-anna-tobby.jpg" alt="Anna & Tobby" /> -->
+                <div class="customer-background">
+                  <h3 class="customer-name">Anna & Tobby</h3>
+                  <p class="customer-text">
+                    Amazing Products &amp; Delivery on time.
+                  </p>
+                  <div class="customer-grade">
+                    <div class="customer-bones-grade">
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div class="customer-bones-nograde">
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
                     </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div class="customer-bones-nograde">
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
+                    <p class="customer-number-grade">4/5</p>
                   </div>
-                  <p class="customer-number-grade">4/5</p>
                 </div>
               </article>
             </li>
             <li class="article-item">
               <article class="article-card">
-                <h3 class="customer-article">Sindy &amp; Kitch</h3>
-                <p class="customer-text">Great job with the trainer!</p>
-                <div class="customer-grade">
-                  <div class="customer-bones-grade">
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
+                <!-- <img
+                src="./images/customer-sindy-kitch.jpg"
+                alt="Sindy & Kitch"
+              /> -->
+                <div class="customer-background">
+                  <h3 class="customer-name">Sindy &amp; Kitch</h3>
+                  <p class="customer-text">Great job with the trainer!</p>
+                  <div class="customer-grade">
+                    <div class="customer-bones-grade">
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg width="32" height="14">
+                          <use href="./images/icons.svg#icon-bones-grade"></use>
+                        </svg>
+                      </div>
                     </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg width="32" height="14">
-                        <use href="./images/icons.svg#icon-bones-grade"></use>
-                      </svg>
-                    </div>
+                    <p class="customer-number-grade">5/5</p>
                   </div>
-                  <p class="customer-number-grade">5/5</p>
                 </div>
               </article>
             </li>
           </ul>
-          <button class="happy-customer-arrow" type="button">
+          <button class="customer-arrow" type="button">
             <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-happy-customer-arrow"></use>
+              <use href="./images/icons.svg#icon-customer-arrow"></use>
             </svg>
           </button>
         </div>
       </section>
-      <section class="contact-section" id="contact-section">
-        <div class="container">
-          <h2 class="contact-title section-title">
-            Our experts will take<br />care of your friend
-          </h2>
-          <div class="contact-container">
+      <section class="container contact-section" id="contact-section">
+        <h2 class="contact-title section-title">
+          Our experts will take<br />care of your friend
+        </h2>
+        <div class="contact-container">
+          <img src="./images/dog-with-leash.png" alt="Dog with a leash" />
+          <div class="contact-form">
             <p class="fill-out-the-form">
               Fill out the form so we can contact you!
             </p>
@@ -311,111 +327,87 @@
               </label>
             </div>
           </div>
+          <img src="./images/dog-red.png" alt="Red dog" />
         </div>
       </section>
     </main>
-    <footer class="footer-section">
-      <div class="container">
-        <nav>
-          <a href="./index.html">
+    <footer class="container footer-section">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a class="footer-logo" href="./index.html">
             <img src="./images/logo-dog-club.svg" alt="Logo Dog club" />
           </a>
-          <ul>
+          <a href="#">
+            <svg class="footer-icon-instagram" width="32" height="32">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer-icon-facebook" width="32" height="32">
+              <use
+                class="footer-icon-facebook"
+                href="./images/icons.svg#icon-facebook"
+              ></use>
+            </svg>
+          </a>
+        </div>
+        <nav>
+          <ul class="footer-nav">
             <li><a class="link" href="#less-talk-section">Less talk</a></li>
             <li>
-              <a class="link" href="#services-category-section">
-                Services category
-              </a>
+              <a class="link" href="#service-section"> Services category </a>
             </li>
             <li>
-              <a class="link" href="#happy-customer-section">
+              <a class="link" href="#customer-section">
                 <span>Happy customer</span>
               </a>
             </li>
             <li><a class="link" href="#contact-section">Contact</a></li>
           </ul>
         </nav>
-        <ul>
-          <li>
-            <svg class="contact-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-form-email"></use>
-            </svg>
-            <input type="email" placeholder="your email" />
-          </li>
-          <li>
-            <input
-              type="text"
-              placeholder="your name"
-              id="name"
-              name="name"
-              required
-              maxlength="30"
-            />
-          </li>
-        </ul>
-        <button class="button-contact" type="submit">Contact us</button>
-        <input
-          type="checkbox"
-          name="I agree to privacy policy"
-          id="i-agree-privacy-policy"
-          value="i-agree"
-        />
-        <label for="i-agree-privacy-policy" class="privacy-policy-agreement">
-          I agree to privacy policy
-        </label>
-        <img src="./images/footer-section-dog.png" alt="Friendly dog" />
+        <div class="footer-form">
+          <ul>
+            <li>
+              <svg class="contact-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-form-email"></use>
+              </svg>
+              <input type="email" placeholder="your email" />
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="your name"
+                id="name"
+                name="name"
+                required
+                maxlength="30"
+              />
+            </li>
+          </ul>
+          <button class="button-contact" type="submit">Contact us</button>
+          <input
+            type="checkbox"
+            name="I agree to privacy policy"
+            id="i-agree-privacy-policy"
+            value="i-agree"
+          />
+          <label for="i-agree-privacy-policy" class="privacy-policy-agreement">
+            I agree to privacy policy
+          </label>
+        </div>
       </div>
-      <address>
-        <ul>
-          <li>
-            <a href="#" title="Instagram">
-              <svg class="address-icon-instagram" width="30" height="30">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" title="Facebook">
-              <svg class="address-icon-facebook" width="32" height="32">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380991234567" class="address">+38 099 123-45-67</a>
-          </li>
-          <li>
-            <a href="mailto:dogclub@gmail.com" class="address">
-              dogclub@gmail.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://maps.app.goo.gl/2WGGyRuWL5ZSdYtBA"
-              target="_blank"
-              class="address"
-            >
-              Greece, Epimenidou 19
-            </a>
-          </li>
-          <li>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.3237149880424!2d25.13715505862169!3d35.342679668355856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a5a2df4adc303%3A0x5383b54a57a7158a!2zRXBpbWVuaWRvdSAxOSwgSXJha2xpbyA3MTIgMDIsINCT0YDQtdGG0LjRjw!5e0!3m2!1sru!2sua!4v1750465021475!5m2!1sru!2sua"
-              width="800"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </li>
-        </ul>
-        <a href="#" target="_blank" class="address" style="font-style: italic">
-          Privacy policy
-        </a>
-        <p>&copy; All rights reserved</p>
-      </address>
+      <img
+        class="footer-image"
+        src="./images/footer-section-dog.png"
+        alt="Friendly dog"
+      />
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

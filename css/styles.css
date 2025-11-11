@@ -251,12 +251,6 @@ footer .button-contact {
     text-transform: capitalize
 }
 
-.hero-background-elements {
-    background-image: url('../images/hero-section-background-elements.svg');
-    background-position: right bottom;
-    background-size: cover;
-}
-
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -271,11 +265,15 @@ footer .button-contact {
     max-width: 494px;
 }
 
-.hero-container > img {
+.hero-image {
+    position: relative;
     padding-top: 23px;
-    /* background-image: url('../images/hero-section-background-elements.svg');
-    background-position: right bottom;
-    background-size: cover; */
+}
+
+.hero-background-elements {
+    position: absolute;
+    top: -84px;
+    left: -248px;
 }
 
 .section-title {
